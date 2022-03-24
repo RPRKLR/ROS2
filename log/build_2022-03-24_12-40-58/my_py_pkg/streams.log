@@ -1,0 +1,33 @@
+[0.498s] Invoking command in '/home/dpeter/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dpeter/ros2_ws/build/my_py_pkg/build install --prefix /home/dpeter/ros2_ws/install/my_py_pkg --record /home/dpeter/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[0.662s] running egg_info
+[0.662s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[0.662s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.662s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.662s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.662s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.662s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.663s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.689s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.690s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.690s] running build
+[0.690s] running build_py
+[0.690s] creating /home/dpeter/ros2_ws/build/my_py_pkg/build
+[0.690s] creating /home/dpeter/ros2_ws/build/my_py_pkg/build/lib
+[0.690s] creating /home/dpeter/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.691s] copying my_py_pkg/__init__.py -> /home/dpeter/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.691s] running install
+[0.691s] running install_lib
+[0.692s] creating /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg
+[0.692s] copying /home/dpeter/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg
+[0.692s] byte-compiling /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg/__init__.py to __init__.cpython-38.pyc
+[0.693s] running install_data
+[0.693s] creating /home/dpeter/ros2_ws/install/my_py_pkg/share/ament_index
+[0.693s] creating /home/dpeter/ros2_ws/install/my_py_pkg/share/ament_index/resource_index
+[0.693s] creating /home/dpeter/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.693s] copying resource/my_py_pkg -> /home/dpeter/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.694s] copying package.xml -> /home/dpeter/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[0.694s] running install_egg_info
+[0.695s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info
+[0.695s] running install_scripts
+[0.708s] writing list of installed files to '/home/dpeter/ros2_ws/build/my_py_pkg/install.log'
+[0.724s] Invoked command in '/home/dpeter/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dpeter/ros2_ws/build/my_py_pkg/build install --prefix /home/dpeter/ros2_ws/install/my_py_pkg --record /home/dpeter/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
