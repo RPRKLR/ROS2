@@ -1,11 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(my_cpp_pkg)
 
-# Default to C99
-if(NOT CMAKE_C_STANDARD)
-  set(CMAKE_C_STANDARD 99)
-endif()
-
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
@@ -19,15 +14,16 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # uncomment the line when a copyright and license is not present in all source files
-  #set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # uncomment the line when this package is not in a git repo
-  #set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
+# creatign an executable with the name of "cpp_node"
+add_executable(cpp_node src/my_first_node.cpp)
+#link the cpp_node dependencie, and linking the rclcpp library
+ament_target_dependencies(cpp_node rclcpp)
+
+#installing the cpp_node
+install(TARGETS
+  cpp_node
+  #destination 
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()
