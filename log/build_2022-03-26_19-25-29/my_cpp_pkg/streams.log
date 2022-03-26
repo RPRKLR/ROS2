@@ -1,0 +1,25 @@
+[0.030s] Invoking command in '/home/dpeter/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/dpeter/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[0.063s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.098s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.361s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.423s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.428s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.589s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.660s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.662s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.867s] CMake Error at CMakeLists.txt:16 (find_package):
+[0.867s]   find_package called with invalid argument "example_interfaces"
+[0.867s] 
+[0.867s] 
+[0.868s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.868s]   ament_target_dependencies() the passed package name 'example_interfaces'
+[0.868s]   was not found before
+[0.868s] Call Stack (most recent call first):
+[0.868s]   CMakeLists.txt:24 (ament_target_dependencies)
+[0.869s] 
+[0.869s] 
+[0.870s] -- Configuring incomplete, errors occurred!
+[0.870s] See also "/home/dpeter/ros2_ws/build/my_cpp_pkg/CMakeFiles/CMakeOutput.log".
+[0.870s] See also "/home/dpeter/ros2_ws/build/my_cpp_pkg/CMakeFiles/CMakeError.log".
+[0.876s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.878s] Invoked command in '/home/dpeter/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/dpeter/ros2_ws/build/my_cpp_pkg -- -j8 -l8
