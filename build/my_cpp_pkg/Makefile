@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named smartphone
+
+# Build rule for target.
+smartphone: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 smartphone
+.PHONY : smartphone
+
+# fast build rule for target.
+smartphone/fast:
+	$(MAKE) -f CMakeFiles/smartphone.dir/build.make CMakeFiles/smartphone.dir/build
+.PHONY : smartphone/fast
+
+#=============================================================================
 # Target rules for targets named robot_news_station
 
 # Build rule for target.
@@ -273,6 +286,33 @@ src/robot_news_station.cpp.s:
 	$(MAKE) -f CMakeFiles/robot_news_station.dir/build.make CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.s
 .PHONY : src/robot_news_station.cpp.s
 
+src/smartphone.o: src/smartphone.cpp.o
+
+.PHONY : src/smartphone.o
+
+# target to build an object file
+src/smartphone.cpp.o:
+	$(MAKE) -f CMakeFiles/smartphone.dir/build.make CMakeFiles/smartphone.dir/src/smartphone.cpp.o
+.PHONY : src/smartphone.cpp.o
+
+src/smartphone.i: src/smartphone.cpp.i
+
+.PHONY : src/smartphone.i
+
+# target to preprocess a source file
+src/smartphone.cpp.i:
+	$(MAKE) -f CMakeFiles/smartphone.dir/build.make CMakeFiles/smartphone.dir/src/smartphone.cpp.i
+.PHONY : src/smartphone.cpp.i
+
+src/smartphone.s: src/smartphone.cpp.s
+
+.PHONY : src/smartphone.s
+
+# target to generate assembly for a file
+src/smartphone.cpp.s:
+	$(MAKE) -f CMakeFiles/smartphone.dir/build.make CMakeFiles/smartphone.dir/src/smartphone.cpp.s
+.PHONY : src/smartphone.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -284,6 +324,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... smartphone"
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... robot_news_station"
@@ -296,6 +337,9 @@ help:
 	@echo "... src/robot_news_station.o"
 	@echo "... src/robot_news_station.i"
 	@echo "... src/robot_news_station.s"
+	@echo "... src/smartphone.o"
+	@echo "... src/smartphone.i"
+	@echo "... src/smartphone.s"
 .PHONY : help
 
 

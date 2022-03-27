@@ -579,6 +579,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/smartphone.dir/DependInfo.cmake"
   "CMakeFiles/robot_news_station.dir/DependInfo.cmake"
   "CMakeFiles/cpp_node.dir/DependInfo.cmake"
   "CMakeFiles/my_cpp_pkg_uninstall.dir/DependInfo.cmake"

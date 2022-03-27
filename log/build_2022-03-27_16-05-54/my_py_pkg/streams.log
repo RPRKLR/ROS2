@@ -1,0 +1,36 @@
+[0.863s] Invoking command in '/home/dpeter/ros2_ws/build/my_py_pkg': PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dpeter/ros2_ws/install/my_py_pkg --uninstall --editable --build-directory /home/dpeter/ros2_ws/build/my_py_pkg/build
+[1.158s] running develop
+[1.353s] Invoked command in '/home/dpeter/ros2_ws/build/my_py_pkg' returned '0': PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dpeter/ros2_ws/install/my_py_pkg --uninstall --editable --build-directory /home/dpeter/ros2_ws/build/my_py_pkg/build
+[1.356s] Invoking command in '/home/dpeter/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dpeter/ros2_ws/build/my_py_pkg/build install --prefix /home/dpeter/ros2_ws/install/my_py_pkg --record /home/dpeter/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[1.628s] running egg_info
+[1.629s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[1.629s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[1.629s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[1.630s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[1.630s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[1.681s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.683s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.683s] running build
+[1.683s] running build_py
+[1.683s] copying my_py_pkg/robot_news_station.py -> /home/dpeter/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.684s] copying my_py_pkg/smartphone.py -> /home/dpeter/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.684s] running install
+[1.685s] running install_lib
+[1.686s] creating /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg
+[1.687s] copying /home/dpeter/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/my_first_node.py -> /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg
+[1.687s] copying /home/dpeter/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/robot_news_station.py -> /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg
+[1.687s] copying /home/dpeter/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/smartphone.py -> /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg
+[1.687s] copying /home/dpeter/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg
+[1.688s] byte-compiling /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg/my_first_node.py to my_first_node.cpython-38.pyc
+[1.689s] byte-compiling /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg/robot_news_station.py to robot_news_station.cpython-38.pyc
+[1.690s] byte-compiling /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg/smartphone.py to smartphone.cpython-38.pyc
+[1.690s] byte-compiling /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg/__init__.py to __init__.cpython-38.pyc
+[1.691s] running install_data
+[1.691s] running install_egg_info
+[1.693s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info
+[1.695s] running install_scripts
+[1.716s] Installing py_node script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.716s] Installing robot_news_station script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.716s] Installing smartphone script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.717s] writing list of installed files to '/home/dpeter/ros2_ws/build/my_py_pkg/install.log'
+[1.740s] Invoked command in '/home/dpeter/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dpeter/ros2_ws/build/my_py_pkg/build install --prefix /home/dpeter/ros2_ws/install/my_py_pkg --record /home/dpeter/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
