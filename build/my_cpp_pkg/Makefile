@@ -80,38 +80,16 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target test
+test/fast: test
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -124,16 +102,38 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,30 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named smartphone
+# Target rules for targets named my_cpp_pkg_uninstall
 
 # Build rule for target.
-smartphone: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 smartphone
-.PHONY : smartphone
+my_cpp_pkg_uninstall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_cpp_pkg_uninstall
+.PHONY : my_cpp_pkg_uninstall
 
 # fast build rule for target.
-smartphone/fast:
-	$(MAKE) -f CMakeFiles/smartphone.dir/build.make CMakeFiles/smartphone.dir/build
-.PHONY : smartphone/fast
-
-#=============================================================================
-# Target rules for targets named robot_news_station
-
-# Build rule for target.
-robot_news_station: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robot_news_station
-.PHONY : robot_news_station
-
-# fast build rule for target.
-robot_news_station/fast:
-	$(MAKE) -f CMakeFiles/robot_news_station.dir/build.make CMakeFiles/robot_news_station.dir/build
-.PHONY : robot_news_station/fast
+my_cpp_pkg_uninstall/fast:
+	$(MAKE) -f CMakeFiles/my_cpp_pkg_uninstall.dir/build.make CMakeFiles/my_cpp_pkg_uninstall.dir/build
+.PHONY : my_cpp_pkg_uninstall/fast
 
 #=============================================================================
 # Target rules for targets named cpp_node
@@ -207,17 +194,17 @@ cpp_node/fast:
 .PHONY : cpp_node/fast
 
 #=============================================================================
-# Target rules for targets named my_cpp_pkg_uninstall
+# Target rules for targets named robot_news_station
 
 # Build rule for target.
-my_cpp_pkg_uninstall: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_cpp_pkg_uninstall
-.PHONY : my_cpp_pkg_uninstall
+robot_news_station: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_news_station
+.PHONY : robot_news_station
 
 # fast build rule for target.
-my_cpp_pkg_uninstall/fast:
-	$(MAKE) -f CMakeFiles/my_cpp_pkg_uninstall.dir/build.make CMakeFiles/my_cpp_pkg_uninstall.dir/build
-.PHONY : my_cpp_pkg_uninstall/fast
+robot_news_station/fast:
+	$(MAKE) -f CMakeFiles/robot_news_station.dir/build.make CMakeFiles/robot_news_station.dir/build
+.PHONY : robot_news_station/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -231,6 +218,139 @@ uninstall: cmake_check_build_system
 uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named smartphone
+
+# Build rule for target.
+smartphone: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 smartphone
+.PHONY : smartphone
+
+# fast build rule for target.
+smartphone/fast:
+	$(MAKE) -f CMakeFiles/smartphone.dir/build.make CMakeFiles/smartphone.dir/build
+.PHONY : smartphone/fast
+
+#=============================================================================
+# Target rules for targets named add_two_ints_server
+
+# Build rule for target.
+add_two_ints_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_server
+.PHONY : add_two_ints_server
+
+# fast build rule for target.
+add_two_ints_server/fast:
+	$(MAKE) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/build
+.PHONY : add_two_ints_server/fast
+
+#=============================================================================
+# Target rules for targets named add_two_ints_client_no_oop
+
+# Build rule for target.
+add_two_ints_client_no_oop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_client_no_oop
+.PHONY : add_two_ints_client_no_oop
+
+# fast build rule for target.
+add_two_ints_client_no_oop/fast:
+	$(MAKE) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/build
+.PHONY : add_two_ints_client_no_oop/fast
+
+#=============================================================================
+# Target rules for targets named add_two_ints_client
+
+# Build rule for target.
+add_two_ints_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_client
+.PHONY : add_two_ints_client
+
+# fast build rule for target.
+add_two_ints_client/fast:
+	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/build
+.PHONY : add_two_ints_client/fast
+
+src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
+
+.PHONY : src/add_two_ints_client.o
+
+# target to build an object file
+src/add_two_ints_client.cpp.o:
+	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o
+.PHONY : src/add_two_ints_client.cpp.o
+
+src/add_two_ints_client.i: src/add_two_ints_client.cpp.i
+
+.PHONY : src/add_two_ints_client.i
+
+# target to preprocess a source file
+src/add_two_ints_client.cpp.i:
+	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.i
+.PHONY : src/add_two_ints_client.cpp.i
+
+src/add_two_ints_client.s: src/add_two_ints_client.cpp.s
+
+.PHONY : src/add_two_ints_client.s
+
+# target to generate assembly for a file
+src/add_two_ints_client.cpp.s:
+	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.s
+.PHONY : src/add_two_ints_client.cpp.s
+
+src/add_two_ints_client_no_oop.o: src/add_two_ints_client_no_oop.cpp.o
+
+.PHONY : src/add_two_ints_client_no_oop.o
+
+# target to build an object file
+src/add_two_ints_client_no_oop.cpp.o:
+	$(MAKE) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o
+.PHONY : src/add_two_ints_client_no_oop.cpp.o
+
+src/add_two_ints_client_no_oop.i: src/add_two_ints_client_no_oop.cpp.i
+
+.PHONY : src/add_two_ints_client_no_oop.i
+
+# target to preprocess a source file
+src/add_two_ints_client_no_oop.cpp.i:
+	$(MAKE) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.i
+.PHONY : src/add_two_ints_client_no_oop.cpp.i
+
+src/add_two_ints_client_no_oop.s: src/add_two_ints_client_no_oop.cpp.s
+
+.PHONY : src/add_two_ints_client_no_oop.s
+
+# target to generate assembly for a file
+src/add_two_ints_client_no_oop.cpp.s:
+	$(MAKE) -f CMakeFiles/add_two_ints_client_no_oop.dir/build.make CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.s
+.PHONY : src/add_two_ints_client_no_oop.cpp.s
+
+src/add_two_ints_server.o: src/add_two_ints_server.cpp.o
+
+.PHONY : src/add_two_ints_server.o
+
+# target to build an object file
+src/add_two_ints_server.cpp.o:
+	$(MAKE) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o
+.PHONY : src/add_two_ints_server.cpp.o
+
+src/add_two_ints_server.i: src/add_two_ints_server.cpp.i
+
+.PHONY : src/add_two_ints_server.i
+
+# target to preprocess a source file
+src/add_two_ints_server.cpp.i:
+	$(MAKE) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.i
+.PHONY : src/add_two_ints_server.cpp.i
+
+src/add_two_ints_server.s: src/add_two_ints_server.cpp.s
+
+.PHONY : src/add_two_ints_server.s
+
+# target to generate assembly for a file
+src/add_two_ints_server.cpp.s:
+	$(MAKE) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.s
+.PHONY : src/add_two_ints_server.cpp.s
 
 src/my_first_node.o: src/my_first_node.cpp.o
 
@@ -321,16 +441,28 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... smartphone"
-	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... robot_news_station"
-	@echo "... cpp_node"
 	@echo "... my_cpp_pkg_uninstall"
+	@echo "... cpp_node"
+	@echo "... robot_news_station"
 	@echo "... uninstall"
+	@echo "... test"
+	@echo "... smartphone"
+	@echo "... add_two_ints_server"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... list_install_components"
+	@echo "... install"
+	@echo "... add_two_ints_client_no_oop"
+	@echo "... add_two_ints_client"
+	@echo "... src/add_two_ints_client.o"
+	@echo "... src/add_two_ints_client.i"
+	@echo "... src/add_two_ints_client.s"
+	@echo "... src/add_two_ints_client_no_oop.o"
+	@echo "... src/add_two_ints_client_no_oop.i"
+	@echo "... src/add_two_ints_client_no_oop.s"
+	@echo "... src/add_two_ints_server.o"
+	@echo "... src/add_two_ints_server.i"
+	@echo "... src/add_two_ints_server.s"
 	@echo "... src/my_first_node.o"
 	@echo "... src/my_first_node.i"
 	@echo "... src/my_first_node.s"
