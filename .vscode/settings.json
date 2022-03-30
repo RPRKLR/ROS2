@@ -1,5 +1,9 @@
 {
     "files.associations": {
         "functional": "cpp"
-    }
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
 }

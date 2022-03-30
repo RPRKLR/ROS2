@@ -80,6 +80,18 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -122,18 +134,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -246,6 +246,19 @@ add_two_ints_server/fast:
 .PHONY : add_two_ints_server/fast
 
 #=============================================================================
+# Target rules for targets named add_two_ints_client
+
+# Build rule for target.
+add_two_ints_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_client
+.PHONY : add_two_ints_client
+
+# fast build rule for target.
+add_two_ints_client/fast:
+	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/build
+.PHONY : add_two_ints_client/fast
+
+#=============================================================================
 # Target rules for targets named add_two_ints_client_no_oop
 
 # Build rule for target.
@@ -259,17 +272,17 @@ add_two_ints_client_no_oop/fast:
 .PHONY : add_two_ints_client_no_oop/fast
 
 #=============================================================================
-# Target rules for targets named add_two_ints_client
+# Target rules for targets named hardware_status_publisher
 
 # Build rule for target.
-add_two_ints_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_client
-.PHONY : add_two_ints_client
+hardware_status_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hardware_status_publisher
+.PHONY : hardware_status_publisher
 
 # fast build rule for target.
-add_two_ints_client/fast:
-	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/build
-.PHONY : add_two_ints_client/fast
+hardware_status_publisher/fast:
+	$(MAKE) -f CMakeFiles/hardware_status_publisher.dir/build.make CMakeFiles/hardware_status_publisher.dir/build
+.PHONY : hardware_status_publisher/fast
 
 src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
 
@@ -351,6 +364,33 @@ src/add_two_ints_server.s: src/add_two_ints_server.cpp.s
 src/add_two_ints_server.cpp.s:
 	$(MAKE) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.s
 .PHONY : src/add_two_ints_server.cpp.s
+
+src/hw_status_publisher.o: src/hw_status_publisher.cpp.o
+
+.PHONY : src/hw_status_publisher.o
+
+# target to build an object file
+src/hw_status_publisher.cpp.o:
+	$(MAKE) -f CMakeFiles/hardware_status_publisher.dir/build.make CMakeFiles/hardware_status_publisher.dir/src/hw_status_publisher.cpp.o
+.PHONY : src/hw_status_publisher.cpp.o
+
+src/hw_status_publisher.i: src/hw_status_publisher.cpp.i
+
+.PHONY : src/hw_status_publisher.i
+
+# target to preprocess a source file
+src/hw_status_publisher.cpp.i:
+	$(MAKE) -f CMakeFiles/hardware_status_publisher.dir/build.make CMakeFiles/hardware_status_publisher.dir/src/hw_status_publisher.cpp.i
+.PHONY : src/hw_status_publisher.cpp.i
+
+src/hw_status_publisher.s: src/hw_status_publisher.cpp.s
+
+.PHONY : src/hw_status_publisher.s
+
+# target to generate assembly for a file
+src/hw_status_publisher.cpp.s:
+	$(MAKE) -f CMakeFiles/hardware_status_publisher.dir/build.make CMakeFiles/hardware_status_publisher.dir/src/hw_status_publisher.cpp.s
+.PHONY : src/hw_status_publisher.cpp.s
 
 src/my_first_node.o: src/my_first_node.cpp.o
 
@@ -441,6 +481,7 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... install"
 	@echo "... my_cpp_pkg_uninstall"
 	@echo "... cpp_node"
 	@echo "... robot_news_station"
@@ -451,9 +492,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
-	@echo "... install"
-	@echo "... add_two_ints_client_no_oop"
 	@echo "... add_two_ints_client"
+	@echo "... add_two_ints_client_no_oop"
+	@echo "... hardware_status_publisher"
 	@echo "... src/add_two_ints_client.o"
 	@echo "... src/add_two_ints_client.i"
 	@echo "... src/add_two_ints_client.s"
@@ -463,6 +504,9 @@ help:
 	@echo "... src/add_two_ints_server.o"
 	@echo "... src/add_two_ints_server.i"
 	@echo "... src/add_two_ints_server.s"
+	@echo "... src/hw_status_publisher.o"
+	@echo "... src/hw_status_publisher.i"
+	@echo "... src/hw_status_publisher.s"
 	@echo "... src/my_first_node.o"
 	@echo "... src/my_first_node.i"
 	@echo "... src/my_first_node.s"
