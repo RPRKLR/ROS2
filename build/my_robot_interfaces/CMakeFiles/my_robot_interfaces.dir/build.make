@@ -54,6 +54,9 @@ CMAKE_BINARY_DIR = /home/dpeter/ros2_ws/build/my_robot_interfaces
 include CMakeFiles/my_robot_interfaces.dir/progress.make
 
 CMakeFiles/my_robot_interfaces: /home/dpeter/ros2_ws/src/my_robot_interfaces/msg/HardwareStatus.msg
+CMakeFiles/my_robot_interfaces: /home/dpeter/ros2_ws/src/my_robot_interfaces/srv/ComputeRectangleArea.srv
+CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/ComputeRectangleArea_Request.msg
+CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/ComputeRectangleArea_Response.msg
 
 
 my_robot_interfaces: CMakeFiles/my_robot_interfaces
