@@ -1,0 +1,31 @@
+[0.994s] Invoking command in '/home/dpeter/ros2_ws/build/my_py_pkg': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --prefix /home/dpeter/ros2_ws/install/my_py_pkg --uninstall --editable --build-directory /home/dpeter/ros2_ws/build/my_py_pkg/build
+[1.291s] running develop
+[1.495s] Invoked command in '/home/dpeter/ros2_ws/build/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --prefix /home/dpeter/ros2_ws/install/my_py_pkg --uninstall --editable --build-directory /home/dpeter/ros2_ws/build/my_py_pkg/build
+[1.497s] Invoking command in '/home/dpeter/ros2_ws/src/my_py_pkg': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dpeter/ros2_ws/build/my_py_pkg/build install --prefix /home/dpeter/ros2_ws/install/my_py_pkg --record /home/dpeter/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[1.765s] running egg_info
+[1.766s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[1.766s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[1.767s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[1.767s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[1.767s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[1.812s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.813s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.813s] running build
+[1.814s] running build_py
+[1.814s] running install
+[1.815s] running install_lib
+[1.817s] running install_data
+[1.818s] running install_egg_info
+[1.820s] removing '/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[1.821s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info
+[1.822s] running install_scripts
+[1.843s] Installing add_two_ints_client script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.844s] Installing add_two_ints_client_no_oop script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.844s] Installing add_two_ints_server script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.844s] Installing hw_status_publisher script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.844s] Installing number_publisher script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.844s] Installing py_node script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.845s] Installing robot_news_station script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.845s] Installing smartphone script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[1.845s] writing list of installed files to '/home/dpeter/ros2_ws/build/my_py_pkg/install.log'
+[1.869s] Invoked command in '/home/dpeter/ros2_ws/src/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dpeter/ros2_ws/build/my_py_pkg/build install --prefix /home/dpeter/ros2_ws/install/my_py_pkg --record /home/dpeter/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed

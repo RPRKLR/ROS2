@@ -1,0 +1,23 @@
+[0.024s] Invoking command in '/home/dpeter/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy PYTHONPATH=/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/dpeter/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[0.061s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.101s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.371s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.429s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.435s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.613s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.694s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.697s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.918s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[1.082s] -- Found my_robot_interfaces: 0.0.0 (/home/dpeter/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)
+[1.101s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[1.101s]   ament_target_dependencies() the passed package name 'example_references'
+[1.101s]   was not found before
+[1.101s] Call Stack (most recent call first):
+[1.102s]   CMakeLists.txt:43 (ament_target_dependencies)
+[1.102s] 
+[1.102s] 
+[1.103s] -- Configuring incomplete, errors occurred!
+[1.103s] See also "/home/dpeter/ros2_ws/build/my_cpp_pkg/CMakeFiles/CMakeOutput.log".
+[1.104s] See also "/home/dpeter/ros2_ws/build/my_cpp_pkg/CMakeFiles/CMakeError.log".
+[1.110s] make: *** [Makefile:530: cmake_check_build_system] Error 1
+[1.112s] Invoked command in '/home/dpeter/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy PYTHONPATH=/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/dpeter/ros2_ws/build/my_cpp_pkg -- -j8 -l8
