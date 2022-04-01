@@ -1,0 +1,31 @@
+[1.233s] Invoking command in '/home/dpeter/ros2_ws/build/my_py_pkg': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_robot_bringup PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/build/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --prefix /home/dpeter/ros2_ws/install/my_py_pkg --uninstall --editable --build-directory /home/dpeter/ros2_ws/build/my_py_pkg/build
+[1.603s] running develop
+[1.847s] Invoked command in '/home/dpeter/ros2_ws/build/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_robot_bringup PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/build/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --prefix /home/dpeter/ros2_ws/install/my_py_pkg --uninstall --editable --build-directory /home/dpeter/ros2_ws/build/my_py_pkg/build
+[1.852s] Invoking command in '/home/dpeter/ros2_ws/src/my_py_pkg': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_robot_bringup PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/build/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dpeter/ros2_ws/build/my_py_pkg/build install --prefix /home/dpeter/ros2_ws/install/my_py_pkg --record /home/dpeter/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[2.151s] running egg_info
+[2.152s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[2.152s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[2.152s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[2.153s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[2.153s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[2.199s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.201s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.201s] running build
+[2.201s] running build_py
+[2.202s] running install
+[2.203s] running install_lib
+[2.205s] running install_data
+[2.206s] running install_egg_info
+[2.208s] removing '/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[2.208s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info
+[2.210s] running install_scripts
+[2.233s] Installing add_two_ints_client script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.233s] Installing add_two_ints_client_no_oop script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.233s] Installing add_two_ints_server script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.234s] Installing hw_status_publisher script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.234s] Installing number_publisher script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.234s] Installing py_node script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.234s] Installing robot_news_station script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.234s] Installing smartphone script to /home/dpeter/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.235s] writing list of installed files to '/home/dpeter/ros2_ws/build/my_py_pkg/install.log'
+[2.262s] Invoked command in '/home/dpeter/ros2_ws/src/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_robot_bringup PYTHONPATH=/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/build/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dpeter/ros2_ws/build/my_py_pkg/build install --prefix /home/dpeter/ros2_ws/install/my_py_pkg --record /home/dpeter/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed

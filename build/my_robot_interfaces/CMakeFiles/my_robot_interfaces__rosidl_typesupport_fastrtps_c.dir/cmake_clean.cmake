@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/hardware_status__type_support_c.cpp.o"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/turtle__type_support_c.cpp.o"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/turtle_array__type_support_c.cpp.o"
+  "CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/catch_turtle__type_support_c.cpp.o"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support_c.cpp.o"
   "libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.pdb"
   "libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so"
@@ -11,6 +12,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/turtle__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/turtle_array__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/turtle_array__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/catch_turtle__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/catch_turtle__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support_c.cpp"
 )

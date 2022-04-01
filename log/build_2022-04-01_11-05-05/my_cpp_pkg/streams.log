@@ -1,0 +1,53 @@
+[0.039s] Invoking command in '/home/dpeter/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_robot_bringup:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy PYTHONPATH=/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/build/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/dpeter/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[0.368s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.369s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.374s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.424s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.429s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.632s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.708s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.710s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.928s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[1.090s] -- Found my_robot_interfaces: 0.0.0 (/home/dpeter/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)
+[1.214s] -- Configuring done
+[1.267s] -- Generating done
+[1.271s] -- Build files have been written to: /home/dpeter/ros2_ws/build/my_cpp_pkg
+[1.365s] [ 12%] Built target add_two_ints_server
+[1.383s] [35m[1mScanning dependencies of target hardware_status_publisher[0m
+[1.387s] [ 25%] Built target cpp_node
+[1.387s] [ 37%] Built target number_publisher
+[1.393s] [ 50%] Built target add_two_ints_client
+[1.401s] [ 62%] Built target robot_news_station
+[1.405s] [ 75%] Built target smartphone
+[1.418s] [ 87%] Built target add_two_ints_client_no_oop
+[1.438s] [ 93%] [32mBuilding CXX object CMakeFiles/hardware_status_publisher.dir/src/hw_status_publisher.cpp.o[0m
+[5.457s] [100%] [32m[1mLinking CXX executable hardware_status_publisher[0m
+[5.671s] [100%] Built target hardware_status_publisher
+[5.688s] Invoked command in '/home/dpeter/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_robot_bringup:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy PYTHONPATH=/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/build/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/dpeter/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[5.737s] Invoking command in '/home/dpeter/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_robot_bringup:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy PYTHONPATH=/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/build/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/dpeter/ros2_ws/build/my_cpp_pkg
+[5.751s] -- Install configuration: ""
+[5.751s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[5.752s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station
+[5.752s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone
+[5.753s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server
+[5.753s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop
+[5.754s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client
+[5.755s] -- Installing: /home/dpeter/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hardware_status_publisher
+[5.756s] -- Set runtime path of "/home/dpeter/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hardware_status_publisher" to ""
+[5.756s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_publisher
+[5.757s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[5.757s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[5.757s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[5.757s] -- Installing: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[5.758s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[5.758s] -- Installing: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[5.758s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[5.758s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[5.758s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[5.758s] -- Installing: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[5.759s] -- Installing: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[5.759s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[5.759s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[5.759s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[5.760s] -- Up-to-date: /home/dpeter/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[5.763s] Invoked command in '/home/dpeter/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dpeter/ros2_ws/install/my_robot_interfaces:/home/dpeter/ros2_ws/install/my_cpp_pkg:/home/dpeter/ros2_ws/install/my_robot_bringup:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy PYTHONPATH=/home/dpeter/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages:/home/dpeter/ros2_ws/build/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:/home/dpeter/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/dpeter/ros2_ws/build/my_cpp_pkg
