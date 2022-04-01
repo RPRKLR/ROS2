@@ -1,0 +1,37 @@
+[0.016s] Invoking command in '/home/dpeter/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/dpeter/ros2_ws/build/my_robot_interfaces -- -j8 -l8
+[0.046s] CMake Warning (dev) at CMakeLists.txt:19:
+[0.047s]   Syntax Warning in cmake code at column 27
+[0.047s] 
+[0.047s]   Argument not separated from preceding token by whitespace.
+[0.047s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.047s] 
+[0.047s] CMake Warning (dev) at CMakeLists.txt:20:
+[0.047s]   Syntax Warning in cmake code at column 19
+[0.047s] 
+[0.047s]   Argument not separated from preceding token by whitespace.
+[0.048s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.048s] 
+[0.048s] CMake Warning (dev) at CMakeLists.txt:21:
+[0.048s]   Syntax Warning in cmake code at column 24
+[0.048s] 
+[0.048s]   Argument not separated from preceding token by whitespace.
+[0.048s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.048s] 
+[0.059s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.095s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.095s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.341s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.345s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.352s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.555s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.592s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.593s]   rosidl_generate_interfaces() the passed file ',' doesn't exist relative to
+[0.593s]   the CMAKE_CURRENT_SOURCE_DIR '/home/dpeter/ros2_ws/src/my_robot_interfaces'
+[0.593s] Call Stack (most recent call first):
+[0.593s]   CMakeLists.txt:18 (rosidl_generate_interfaces)
+[0.593s] 
+[0.593s] 
+[0.594s] -- Configuring incomplete, errors occurred!
+[0.594s] See also "/home/dpeter/ros2_ws/build/my_robot_interfaces/CMakeFiles/CMakeOutput.log".
+[0.600s] make: *** [Makefile:988: cmake_check_build_system] Error 1
+[0.602s] Invoked command in '/home/dpeter/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dpeter/ros2_ws/install/turtlesim_catch_them_all:/home/dpeter/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/dpeter/ros2_ws/build/my_robot_interfaces -- -j8 -l8

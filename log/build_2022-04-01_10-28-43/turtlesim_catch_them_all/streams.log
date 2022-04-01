@@ -1,0 +1,28 @@
+[1.073s] Invoking command in '/home/dpeter/ros2_ws/build/turtlesim_catch_them_all': PYTHONPATH=/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dpeter/ros2_ws/install/turtlesim_catch_them_all --uninstall --editable --build-directory /home/dpeter/ros2_ws/build/turtlesim_catch_them_all/build
+[1.557s] running develop
+[1.839s] Invoked command in '/home/dpeter/ros2_ws/build/turtlesim_catch_them_all' returned '0': PYTHONPATH=/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dpeter/ros2_ws/install/turtlesim_catch_them_all --uninstall --editable --build-directory /home/dpeter/ros2_ws/build/turtlesim_catch_them_all/build
+[1.841s] Invoking command in '/home/dpeter/ros2_ws/src/turtlesim_catch_them_all': PYTHONPATH=/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtlesim_catch_them_all build --build-base /home/dpeter/ros2_ws/build/turtlesim_catch_them_all/build install --prefix /home/dpeter/ros2_ws/install/turtlesim_catch_them_all --record /home/dpeter/ros2_ws/build/turtlesim_catch_them_all/install.log --single-version-externally-managed
+[2.126s] running egg_info
+[2.127s] writing ../../build/turtlesim_catch_them_all/turtlesim_catch_them_all.egg-info/PKG-INFO
+[2.127s] writing dependency_links to ../../build/turtlesim_catch_them_all/turtlesim_catch_them_all.egg-info/dependency_links.txt
+[2.127s] writing entry points to ../../build/turtlesim_catch_them_all/turtlesim_catch_them_all.egg-info/entry_points.txt
+[2.127s] writing requirements to ../../build/turtlesim_catch_them_all/turtlesim_catch_them_all.egg-info/requires.txt
+[2.128s] writing top-level names to ../../build/turtlesim_catch_them_all/turtlesim_catch_them_all.egg-info/top_level.txt
+[2.173s] reading manifest file '../../build/turtlesim_catch_them_all/turtlesim_catch_them_all.egg-info/SOURCES.txt'
+[2.175s] writing manifest file '../../build/turtlesim_catch_them_all/turtlesim_catch_them_all.egg-info/SOURCES.txt'
+[2.175s] running build
+[2.175s] running build_py
+[2.175s] copying turtlesim_catch_them_all/turtle_spawner.py -> /home/dpeter/ros2_ws/build/turtlesim_catch_them_all/build/lib/turtlesim_catch_them_all
+[2.176s] running install
+[2.177s] running install_lib
+[2.178s] copying /home/dpeter/ros2_ws/build/turtlesim_catch_them_all/build/lib/turtlesim_catch_them_all/turtle_spawner.py -> /home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages/turtlesim_catch_them_all
+[2.179s] byte-compiling /home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages/turtlesim_catch_them_all/turtle_spawner.py to turtle_spawner.cpython-38.pyc
+[2.181s] running install_data
+[2.182s] running install_egg_info
+[2.184s] removing '/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages/turtlesim_catch_them_all-0.0.0-py3.8.egg-info' (and everything under it)
+[2.184s] Copying ../../build/turtlesim_catch_them_all/turtlesim_catch_them_all.egg-info to /home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages/turtlesim_catch_them_all-0.0.0-py3.8.egg-info
+[2.185s] running install_scripts
+[2.208s] Installing turtle_spawner script to /home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/turtlesim_catch_them_all
+[2.208s] Installing turtlesim_controller script to /home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/turtlesim_catch_them_all
+[2.209s] writing list of installed files to '/home/dpeter/ros2_ws/build/turtlesim_catch_them_all/install.log'
+[2.241s] Invoked command in '/home/dpeter/ros2_ws/src/turtlesim_catch_them_all' returned '0': PYTHONPATH=/home/dpeter/ros2_ws/install/turtlesim_catch_them_all/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtlesim_catch_them_all build --build-base /home/dpeter/ros2_ws/build/turtlesim_catch_them_all/build install --prefix /home/dpeter/ros2_ws/install/turtlesim_catch_them_all --record /home/dpeter/ros2_ws/build/turtlesim_catch_them_all/install.log --single-version-externally-managed

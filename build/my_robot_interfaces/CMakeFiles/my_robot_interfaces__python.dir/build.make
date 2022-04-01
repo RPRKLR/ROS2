@@ -70,9 +70,35 @@ CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfac
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dpeter/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c -o CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c.s
 
+CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.o: CMakeFiles/my_robot_interfaces__python.dir/flags.make
+CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.o: rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dpeter/ros2_ws/build/my_robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.o   -c /home/dpeter/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c
+
+CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dpeter/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c > CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.i
+
+CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dpeter/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c -o CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.s
+
+CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.o: CMakeFiles/my_robot_interfaces__python.dir/flags.make
+CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.o: rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dpeter/ros2_ws/build/my_robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.o   -c /home/dpeter/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c
+
+CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dpeter/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c > CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.i
+
+CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dpeter/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c -o CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.s
+
 CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c.o: CMakeFiles/my_robot_interfaces__python.dir/flags.make
 CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c.o: rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dpeter/ros2_ws/build/my_robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dpeter/ros2_ws/build/my_robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c.o   -c /home/dpeter/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c
 
 CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c.i: cmake_force
@@ -86,12 +112,16 @@ CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfac
 # Object files for target my_robot_interfaces__python
 my_robot_interfaces__python_OBJECTS = \
 "CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c.o" \
+"CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.o" \
+"CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.o" \
 "CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c.o"
 
 # External object files for target my_robot_interfaces__python
 my_robot_interfaces__python_EXTERNAL_OBJECTS =
 
 rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c.o
+rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_s.c.o
+rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/msg/_turtle_array_s.c.o
 rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: CMakeFiles/my_robot_interfaces__python.dir/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c.o
 rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: CMakeFiles/my_robot_interfaces__python.dir/build.make
 rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: libmy_robot_interfaces__rosidl_generator_c.so
@@ -102,7 +132,7 @@ rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: /opt/
 rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: /opt/ros/foxy/lib/librcpputils.so
 rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: /opt/ros/foxy/lib/librcutils.so
 rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so: CMakeFiles/my_robot_interfaces__python.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dpeter/ros2_ws/build/my_robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dpeter/ros2_ws/build/my_robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__python.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_robot_interfaces__python.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
